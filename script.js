@@ -1,25 +1,24 @@
-//Faça um algoritmo onde o usuário informe o nome e 4 notas de dois alunos e mostre as médias desses 2 alunos.
-var nome1, nome2 = "";
-var nota1, nota2, nota3, nota4, nota5, nota6, nota7, nota8 = 0;
-nome1 = prompt("Digite o nome do aluno 1:");
-nota1 = parseFloat(prompt("Digite a nota 1 do aluno 1"));
-nota2 = parseFloat(prompt("Digite a nota 2 do aluno 1"));
-nota3 = parseFloat(prompt("Digite a nota 3 do aluno 1"));
-nota4 = parseFloat(prompt("Digite a nota 4 do aluno 1"));
+/*
+Informe se um aluno está aprovado, de recuperação ou reprovado
+seguindo os seguintes critérios:
+informar 3 notas.
+media > 6: aprovado.
+media < 4: reprovado.
 
+Obs use o prompt e exiba os resultado em alert.
+*/
+let = nome1 = "";
+let = nota1, nota2, nota3 = 0;
 
-nome2 = prompt("Digite o nome do aluno 2:");
-nota5 = parseFloat(prompt("Digite a nota 1 do aluno 2"));
-nota6 = parseFloat(prompt("Digite a nota 2 do aluno 2"));
-nota7 = parseFloat(prompt("Digite a nota 3 do aluno 2"));
-nota8 = parseFloat(prompt("Digite a nota 4 do aluno 2"));
+nome1 = prompt("Digite o nome");
+nota1 = parseFloat(prompt("diite a 1° nota"));
+nota2 = parseFloat(prompt("diite a 2° nota"));
+nota3 = parseFloat(prompt("diite a 3° nota"));
 
-var media1, media2 = 0;
-media1 = (nota1 + nota2 + nota3 + nota4) /4;
-media2 = (nota5 + nota6 + nota7 + nota8) /4;
+let = media1 = 0;
+ media1 = (nota1 + nota2 + nota3) /3;
 
-var mensagem = `
-${nome1}, sua media é ${media1}, parabéns!
-${nome2}, sua media é ${media2}, parabéns!`;
-
-alert(mensagem);
+let = media = media1
+if (media > 6) { 
+    prompt("aluno aprovado")
+}
