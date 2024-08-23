@@ -1,30 +1,9 @@
-//entrada de dados
-let dia_semana = prompt("informe o dia da semana que deseja");
-let mensagem = "";
+// faça um algoritimo que peça dois numeros e imprima o maior deles.
+let numero1 = parseInt(prompt("informe o primeiro numero"));
+let numero2 = parseInt(prompt("informe o segundo numero"));
 
-
-if(dia_semana == 1) {
-    mensagem = "Domingo"
+if (numero1 > numero2) {
+    alert ("o numero 1 é maior que o numero 2.");
+} else {
+    alert("o numero 2 é maior que o numero 1.");
 }
-else if (dia_semana == 2) {
-    mensagem = "segunda-feira"
-}
-else if (dia_semana == 3) {
-    mensagem = "terça-feira"
-}
-else if (dia_semana == 4) {
-    mensagem = "quarta-feira"
-}
-else if (dia_semana == 5) {
-    mensagem = "quinta-feira"
-}
-else if (dia_semana == 6) {
-    mensagem = "sexta-feira"
-}
-else if (dia_semana == 7) {
-    mensagem = "sabado"
-}
-else {
-    mensagem = "dia indefinido"
-}
-alert(mensagem)

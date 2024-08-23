@@ -1,40 +1,30 @@
-/*faça um algoritimo para a leitura de duas notas 
-parciais de um aluno. o algoritimo deve calcular 
-a média alcançada:
--media >=7: aprovado
--media <5: reprovado
--media entre 5 e 7: recuperação
-*/
-
-//inicio
-let nome1 = "";
-let nota1 = 0, nota2 = 0;
+//entrada de dados
+let dia_semana = prompt("informe o dia da semana que deseja");
 let mensagem = "";
 
-/*verificar o porque esta errado
-let = nota1, nota2, nota3 = 0
-*/
 
-//entrada de dados
-nome1 = prompt("Digite o nome");
-nota1 = parseFloat(prompt("digite a 1° nota"));
-nota2 = parseFloat(prompt("digite a 2° nota"));
-
-
-//calculo da media
-let media = (nota1 + nota2) / 2;
-
-//logica do alerta 
-if (media >= 7) {
-    mensagem = ", esta Aprovado";
+if(dia_semana == 1) {
+    mensagem = "Domingo"
 }
-else if (media >= 5) {
-    mensagem = ", esta de Recuperação";
+else if (dia_semana == 2) {
+    mensagem = "segunda-feira"
+}
+else if (dia_semana == 3) {
+    mensagem = "terça-feira"
+}
+else if (dia_semana == 4) {
+    mensagem = "quarta-feira"
+}
+else if (dia_semana == 5) {
+    mensagem = "quinta-feira"
+}
+else if (dia_semana == 6) {
+    mensagem = "sexta-feira"
+}
+else if (dia_semana == 7) {
+    mensagem = "sabado"
 }
 else {
-    mensagem = ", esta Reprovado";
+    mensagem = "dia indefinido"
 }
-alert(nome1 + mensagem);
-
-
-
+alert(mensagem)
