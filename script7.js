@@ -5,9 +5,9 @@ Ter 1,70 de altura.
 let texto_menu = `selecione sua altura:
                 1 - 1.70
                 2 - 1.60`
-let idade = parseFloat(prompt`informe sua idade`);
+let idade = parseInt(prompt`informe sua idade`);
 //converte string em numero inteiro 
-let sua_altura = parseInt(prompt(texto_menu));
+let sua_altura = parsefloat(prompt(texto_menu));
 let altura;
 
     switch (sua_altura) {
