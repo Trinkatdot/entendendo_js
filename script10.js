@@ -15,17 +15,58 @@ let texto_menu = `Qual operação você deseja?:
                 4 - divisão
                 5 - potenciação
                 6 - radiciação`;
-let operação_informada = parseInt(prompt(texto_menu));
-let mumero1 = parseFloat(prompt("informe o primeiro n°"));
-let mumero2 = parseFloat(prompt("informe o segundo n°"));
-let numero1, numero2 = 0;
+let operação_informada = (prompt(texto_menu));
+//let mumero1 = parseFloat(prompt("informe o primeiro n°"));
+//let mumero2 = parseFloat(prompt("informe o segundo n°"));
+let numero1, numero2, total = 0;
 let resultado = 0;
-let mensagem = ``;
 
 switch (operação_informada) {
     case 1:
-        resultado = numero1 + numero2;
-        mensagem = (`o total da soma é ${resultado}`);
+        numero1 = parseFloat(prompt("informe o primeiro n°"));
+        numero2 = parseFloat(prompt("informe o segundo n°"));
+        alert = (`${numero1} + ${numero2} = ${numero1 + numero2}`);
+        break;
+    case 1:
+        numero1 = parseFloat(prompt("informe o primeiro n°"));
+        numero2 = parseFloat(prompt("informe o segundo n°"));
+        alert = (`${numero1} - ${numero2} = ${numero1 - numero2}`);
+        break;
+    case 1:
+        numero1 = parseFloat(prompt("informe o primeiro n°"));
+        numero2 = parseFloat(prompt("informe o segundo n°"));
+        alert = (`${numero1} x ${numero2} = ${numero1 * numero2}`);
+        break;
+    case 1:
+        numero1 = parseFloat(prompt("informe o primeiro n°"));
+        numero2 = parseFloat(prompt("informe o segundo n°"));
+        if (numero2 === 0) {
+            alert("Operação Invalida!");
+        } else {
+            resultado = numero1 / numero2;
+            alert(`${numero1} / ${numero2} = ${total.toFixed(2)}`);
+        }
+        break;
+    case 1:
+        numero1 = parseFloat(prompt("informe o primeiro n°"));
+        numero2 = parseFloat(prompt("informe o segundo n°"));
+        alert = (`${numero1} exp ${numero2} = ${numero1 ** numero2}`);
+        break;
+    case 1:
+        numero1 = parseFloat(prompt("informe o primeiro n°"));
+        numero2 = parseFloat(prompt("informe o segundo n°"));
+        let operacao = ""
+        if (numero2 == 2) {
+            operacao = "quadrada";
+        } else if (numero2 == 3) {
+            operacao = "cúbica";
+        } else {
+            operacao = numero2.toString();
+        }
+        alert(`A raiz ${operacao} de ${numero1} = ${numero1 ** (1 / numero2)}`);
+        break;
+    default:
+        alert("Operação Inválida");
         break;
 }
 
