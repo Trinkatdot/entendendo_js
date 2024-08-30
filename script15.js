@@ -7,3 +7,12 @@ Preço do pão: R$ 0,25 unid.
  2 = R$ 0,50 
 ...
 50 = R$ 12,50*/
+
+    let valor = parseFloat(prompt("informe o valor de pães:"));
+    let tabuada = "";
+    for (let index = 1; index <= 50; index++) {
+        tabuada += `${index} pães = R$${(valor * index).toFixed(2)} <br>`
+    }
+    document.write (tabuada);
+    
+
